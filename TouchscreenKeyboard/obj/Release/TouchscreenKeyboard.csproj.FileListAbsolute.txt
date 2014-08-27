@@ -1,0 +1,7 @@
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\bin\Release\TouchscreenKeyboard.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\bin\Release\TouchscreenKeyboard.pdb
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Release\KeyboardClassLibrary.Keyboardcontrol.resources
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Release\KeyboardClassLibrary.Properties.Resources.resources
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Release\TouchscreenKeyboard.csproj.GenerateResource.Cache
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Release\TouchscreenKeyboard.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Release\TouchscreenKeyboard.pdb

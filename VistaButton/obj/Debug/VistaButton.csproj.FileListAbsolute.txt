@@ -1,0 +1,10 @@
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Debug\Form1.resources
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Debug\VistaButton.resources
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Debug\VistaButton.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\bin\Debug\VistaButton.dll
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\bin\Debug\VistaButton.pdb
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\bin\Debug\Documentation.xml
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\bin\Debug\DBDriver.dll
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Debug\VistaButton.dll
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Debug\VistaButton.pdb
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Debug\VistaButton.csprojResolveAssemblyReference.cache

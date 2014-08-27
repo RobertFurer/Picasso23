@@ -1,0 +1,16 @@
+C:\Users\Usuario\Desktop\SVN\PDV\TouchscreenKeyboard\bin\Debug\TouchscreenKeyboard.dll
+C:\Users\Usuario\Desktop\SVN\PDV\TouchscreenKeyboard\bin\Debug\TouchscreenKeyboard.pdb
+C:\Users\Usuario\Desktop\SVN\PDV\TouchscreenKeyboard\obj\Debug\KeyboardClassLibrary.Keyboardcontrol.resources
+C:\Users\Usuario\Desktop\SVN\PDV\TouchscreenKeyboard\obj\Debug\KeyboardClassLibrary.Properties.Resources.resources
+C:\Users\Usuario\Desktop\SVN\PDV\TouchscreenKeyboard\obj\Debug\TouchscreenKeyboard.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\SVN\PDV\TouchscreenKeyboard\obj\Debug\TouchscreenKeyboard.dll
+C:\Users\Usuario\Desktop\SVN\PDV\TouchscreenKeyboard\obj\Debug\TouchscreenKeyboard.pdb
+C:\Users\Usuario\Desktop\SVN\PDV\TouchscreenKeyboard\obj\Debug\TouchscreenKeyboard.csprojResolveAssemblyReference.cache
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\bin\Debug\TouchscreenKeyboard.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\bin\Debug\TouchscreenKeyboard.pdb
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Debug\TouchscreenKeyboard.csprojResolveAssemblyReference.cache
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Debug\KeyboardClassLibrary.Keyboardcontrol.resources
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Debug\KeyboardClassLibrary.Properties.Resources.resources
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Debug\TouchscreenKeyboard.csproj.GenerateResource.Cache
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Debug\TouchscreenKeyboard.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\TouchscreenKeyboard\obj\Debug\TouchscreenKeyboard.pdb

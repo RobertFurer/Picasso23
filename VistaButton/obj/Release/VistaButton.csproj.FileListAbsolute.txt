@@ -1,0 +1,14 @@
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\bin\Release\VistaButton.dll
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\bin\Release\DBDriver.dll
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Release\VistaButton.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Release\Form1.resources
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Release\VistaButton.resources
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Release\VistaButton.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\SVN\PDV\VistaButton\obj\Release\VistaButton.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\VistaButton\bin\Release\VistaButton.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\VistaButton\bin\Release\DBDriver.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\VistaButton\obj\Release\VistaButton.csprojResolveAssemblyReference.cache
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\VistaButton\obj\Release\Form1.resources
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\VistaButton\obj\Release\VistaButton.resources
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\VistaButton\obj\Release\VistaButton.csproj.GenerateResource.Cache
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\VistaButton\obj\Release\VistaButton.dll

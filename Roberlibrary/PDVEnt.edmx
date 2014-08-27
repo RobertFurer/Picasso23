@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PDVModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="PDVModelStoreContainer">
+          <EntitySet Name="Producto" EntityType="PDVModel.Store.Producto" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Receta" EntityType="PDVModel.Store.Receta" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Usuario" EntityType="PDVModel.Store.Usuario" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Venta" EntityType="PDVModel.Store.Venta" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+          <Property Name="CodigoBarras" Type="varchar" MaxLength="50" />
+          <Property Name="StockMinimo" Type="decimal" Scale="8" />
+          <Property Name="StockMaximo" Type="decimal" Scale="8" />
+          <Property Name="Existencia" Type="decimal" Scale="8" />
+          <Property Name="Capacidad" Type="decimal" Scale="8" />
+          <Property Name="UnidadMedida" Type="varchar" MaxLength="50" />
+          <Property Name="PrecioUnitario" Type="decimal" Scale="8" />
+          <Property Name="VistaPublico" Type="bit" />
+        </EntityType>
+        <EntityType Name="Receta">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="id_rec" Type="bigint" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="id_producto" Type="bigint" />
+          <Property Name="Cantidad" Type="decimal" Scale="8" />
+          <Property Name="Preparacion" Type="varchar" MaxLength="800" />
+          <Property Name="NumeroPersonas" Type="varchar" MaxLength="50" />
+          <Property Name="Categoria" Type="varchar" MaxLength="50" />
+          <Property Name="Precio" Type="decimal" Scale="8" />
+          <Property Name="TiempoPreparacion" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="pwd" Type="varchar" MaxLength="50" />
+          <Property Name="tipo" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Venta">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="folio" Type="varchar" MaxLength="30" />
+          <Property Name="id_producto" Type="bigint" />
+          <Property Name="id_receta" Type="bigint" />
+          <Property Name="cantidad" Type="decimal" Scale="8" />
+          <Property Name="total" Type="decimal" Scale="8" />
+          <Property Name="fecha" Type="datetime" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PDVModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PDVEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Producto" EntityType="PDVModel.Producto" />
+          <EntitySet Name="Receta" EntityType="PDVModel.Receta" />
+          <EntitySet Name="Usuario" EntityType="PDVModel.Usuario" />
+          <EntitySet Name="Venta" EntityType="PDVModel.Venta" />
+        </EntityContainer>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="CodigoBarras" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StockMinimo" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="StockMaximo" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="Existencia" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="Capacidad" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="UnidadMedida" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PrecioUnitario" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="VistaPublico" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Receta">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="id_rec" Type="Int64" />
+          <Property Name="Nombre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="id_producto" Type="Int64" />
+          <Property Name="Cantidad" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="Preparacion" Type="String" MaxLength="800" Unicode="false" FixedLength="false" />
+          <Property Name="NumeroPersonas" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Categoria" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Precio" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="TiempoPreparacion" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pwd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="tipo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Venta">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="folio" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="id_producto" Type="Int64" />
+          <Property Name="id_receta" Type="Int64" />
+          <Property Name="cantidad" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="total" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="fecha" Type="DateTime" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PDVModelStoreContainer" CdmEntityContainer="PDVEntities">
+          <EntitySetMapping Name="Producto"><EntityTypeMapping TypeName="PDVModel.Producto"><MappingFragment StoreEntitySet="Producto">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+            <ScalarProperty Name="CodigoBarras" ColumnName="CodigoBarras" />
+            <ScalarProperty Name="StockMinimo" ColumnName="StockMinimo" />
+            <ScalarProperty Name="StockMaximo" ColumnName="StockMaximo" />
+            <ScalarProperty Name="Existencia" ColumnName="Existencia" />
+            <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+            <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+            <ScalarProperty Name="PrecioUnitario" ColumnName="PrecioUnitario" />
+            <ScalarProperty Name="VistaPublico" ColumnName="VistaPublico" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Receta"><EntityTypeMapping TypeName="PDVModel.Receta"><MappingFragment StoreEntitySet="Receta">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="id_rec" ColumnName="id_rec" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+            <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+            <ScalarProperty Name="Preparacion" ColumnName="Preparacion" />
+            <ScalarProperty Name="NumeroPersonas" ColumnName="NumeroPersonas" />
+            <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+            <ScalarProperty Name="Precio" ColumnName="Precio" />
+            <ScalarProperty Name="TiempoPreparacion" ColumnName="TiempoPreparacion" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Usuario"><EntityTypeMapping TypeName="PDVModel.Usuario"><MappingFragment StoreEntitySet="Usuario">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="nombre" ColumnName="nombre" />
+            <ScalarProperty Name="pwd" ColumnName="pwd" />
+            <ScalarProperty Name="tipo" ColumnName="tipo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Venta"><EntityTypeMapping TypeName="PDVModel.Venta"><MappingFragment StoreEntitySet="Venta">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="folio" ColumnName="folio" />
+            <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+            <ScalarProperty Name="id_receta" ColumnName="id_receta" />
+            <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+            <ScalarProperty Name="total" ColumnName="total" />
+            <ScalarProperty Name="fecha" ColumnName="fecha" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="PDVEnt">
+        <EntityTypeShape EntityType="PDVModel.Producto" Width="1.5" PointX="0.75" PointY="0.75" Height="3.1340950520833335" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDVModel.Receta" Width="1.5" PointX="2.75" PointY="0.75" Height="2.9417936197916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDVModel.Usuario" Width="1.5" PointX="4.75" PointY="0.75" Height="1.7879850260416665" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDVModel.Venta" Width="1.5" PointX="0.75" PointY="4.75" Height="2.3648893229166656" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

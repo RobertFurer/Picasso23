@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PDVModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PDVModelStoreContainer" />
+  <!--Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'PDV.dbo.Producto' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="Producto">
+        <Property Name="id" Type="bigint" />
+        <Property Name="Nombre" Type="varchar" MaxLength="50" />
+        <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+        <Property Name="CodigoBarras" Type="varchar" MaxLength="50" />
+        <Property Name="StockMinimo" Type="decimal" />
+        <Property Name="StockMaximo" Type="decimal" />
+        <Property Name="Existencia" Type="decimal" />
+        <Property Name="Capacidad" Type="decimal" />
+        <Property Name="UnidadMedida" Type="varchar" MaxLength="50" />
+        <Property Name="PrecioUnitario" Type="decimal" />
+        <Property Name="VistaPublico" Type="bit" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'PDV.dbo.Receta' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="Receta">
+        <Property Name="id" Type="bigint" />
+        <Property Name="Nombre" Type="varchar" MaxLength="50" />
+        <Property Name="id_producto" Type="bigint" />
+        <Property Name="Cantidad" Type="decimal" />
+        <Property Name="Preparacion" Type="varchar" MaxLength="800" />
+        <Property Name="NumeroPersonas" Type="varchar" MaxLength="50" />
+        <Property Name="Categoria" Type="varchar" MaxLength="50" />
+        <Property Name="Precio" Type="decimal" />
+        <Property Name="TiempoPreparacion" Type="varchar" MaxLength="30" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'PDV.dbo.Usuario' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="Usuario">
+        <Property Name="id" Type="bigint" />
+        <Property Name="nombre" Type="varchar" MaxLength="50" />
+        <Property Name="pwd" Type="varchar" MaxLength="50" />
+        <Property Name="tipo" Type="varchar" MaxLength="50" />
+      </EntityType>-->
+</Schema>

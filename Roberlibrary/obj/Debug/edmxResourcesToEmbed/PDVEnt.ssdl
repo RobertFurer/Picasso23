@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PDVModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PDVModelStoreContainer">
+    <EntitySet Name="Producto" EntityType="PDVModel.Store.Producto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Receta" EntityType="PDVModel.Store.Receta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuario" EntityType="PDVModel.Store.Usuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Venta" EntityType="PDVModel.Store.Venta" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+    <Property Name="CodigoBarras" Type="varchar" MaxLength="50" />
+    <Property Name="StockMinimo" Type="decimal" Scale="8" />
+    <Property Name="StockMaximo" Type="decimal" Scale="8" />
+    <Property Name="Existencia" Type="decimal" Scale="8" />
+    <Property Name="Capacidad" Type="decimal" Scale="8" />
+    <Property Name="UnidadMedida" Type="varchar" MaxLength="50" />
+    <Property Name="PrecioUnitario" Type="decimal" Scale="8" />
+    <Property Name="VistaPublico" Type="bit" />
+  </EntityType>
+  <EntityType Name="Receta">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="id_rec" Type="bigint" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="id_producto" Type="bigint" />
+    <Property Name="Cantidad" Type="decimal" Scale="8" />
+    <Property Name="Preparacion" Type="varchar" MaxLength="800" />
+    <Property Name="NumeroPersonas" Type="varchar" MaxLength="50" />
+    <Property Name="Categoria" Type="varchar" MaxLength="50" />
+    <Property Name="Precio" Type="decimal" Scale="8" />
+    <Property Name="TiempoPreparacion" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="pwd" Type="varchar" MaxLength="50" />
+    <Property Name="tipo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="folio" Type="varchar" MaxLength="30" />
+    <Property Name="id_producto" Type="bigint" />
+    <Property Name="id_receta" Type="bigint" />
+    <Property Name="cantidad" Type="decimal" Scale="8" />
+    <Property Name="total" Type="decimal" Scale="8" />
+    <Property Name="fecha" Type="datetime" />
+  </EntityType>
+</Schema>

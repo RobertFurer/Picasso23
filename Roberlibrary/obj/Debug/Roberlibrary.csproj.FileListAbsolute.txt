@@ -1,0 +1,17 @@
+C:\Users\Usuario\Desktop\SVN\PDV\Roberlibrary\bin\Debug\Roberlibrary.dll
+C:\Users\Usuario\Desktop\SVN\PDV\Roberlibrary\bin\Debug\Roberlibrary.pdb
+C:\Users\Usuario\Desktop\SVN\PDV\Roberlibrary\obj\Debug\Roberlibrary.dll
+C:\Users\Usuario\Desktop\SVN\PDV\Roberlibrary\obj\Debug\Roberlibrary.pdb
+C:\Users\Usuario\Desktop\SVN\PDV\Roberlibrary\obj\Debug\Roberlibrary.csprojResolveAssemblyReference.cache
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\Roberlibrary\bin\Debug\Roberlibrary.dll.config
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\Roberlibrary\bin\Debug\Roberlibrary.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\Roberlibrary\bin\Debug\Roberlibrary.pdb
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\Roberlibrary\obj\Debug\Roberlibrary.dll
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\Roberlibrary\obj\Debug\Roberlibrary.pdb
+C:\Users\Rober\Desktop\Proyectos\SVN\PDV\Roberlibrary\obj\Debug\Roberlibrary.csprojResolveAssemblyReference.cache
+D:\Documentos\Programacion\Proyectos\SVN\PDV\Roberlibrary\bin\Debug\Roberlibrary.dll.config
+D:\Documentos\Programacion\Proyectos\SVN\PDV\Roberlibrary\bin\Debug\Roberlibrary.dll
+D:\Documentos\Programacion\Proyectos\SVN\PDV\Roberlibrary\bin\Debug\Roberlibrary.pdb
+D:\Documentos\Programacion\Proyectos\SVN\PDV\Roberlibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Programacion\Proyectos\SVN\PDV\Roberlibrary\obj\Debug\Roberlibrary.dll
+D:\Documentos\Programacion\Proyectos\SVN\PDV\Roberlibrary\obj\Debug\Roberlibrary.pdb
